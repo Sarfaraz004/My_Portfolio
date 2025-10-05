@@ -58,7 +58,7 @@ darkmodeicon.onclick = () => {
 
 //text
 let text = "Sarfaraz Sattar", i = 0, j = 0, speedd = 280;
-let text2 = "Web Devloper";
+let text2 = "Developer";
 function tp() {
   if (i < text.length) {
     document.getElementById("demo").innerHTML += text.charAt(i)
@@ -98,4 +98,55 @@ ScrollReveal({
   ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
   ScrollReveal().reveal('.home-content h1,.about-img img', { origin: 'left' });
   ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+const skillsSwiper = new Swiper(".skillsSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+    on: {
+      init: function () {
+        animateProgress(this.slides[this.activeIndex]);
+      },
+      slideChangeTransitionStart: function () {
+        animateProgress(this.slides[this.activeIndex]);
+      }
+    }
+});
+
+// Function to animate progress bar of active slide
+function animateProgress(slide) {
+    if (!slide) return;
+
+    // Reset all fills
+    document.querySelectorAll('.skill-fill').forEach(f => f.style.width = '0');
+
+    // Animate all progress bars in the visible slides
+    const visibleSlides = document.querySelectorAll('.skillsSwiper .swiper-slide-active, .skillsSwiper .swiper-slide-next, .skillsSwiper .swiper-slide-prev');
+    
+    visibleSlides.forEach(slide => {
+        const fill = slide.querySelector('.skill-fill');
+        const percentageEl = slide.querySelector('.skill-percentage span');
+        if (!fill) return;
+
+        const percentage = fill.getAttribute('data-percentage');
+        setTimeout(() => {
+            fill.style.width = percentage + '%';
+            if (percentageEl) percentageEl.textContent = percentage + '%';
+        }, 200);
+    });
+}
+
 

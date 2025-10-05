@@ -14,7 +14,7 @@ I specialize in **HTML, CSS, and JavaScript** to create **robust and user-friend
 
 ## 🔗 Check Out My Portfolio
 
-[![Visit Portfolio](https://img.shields.io/badge/Visit-My%20Portfolio-blue?style=for-the-badge&logo=github)](https://sarfaraz004.github.io/My_Portfolio/)
+[![Visit Portfolio](https://img.shields.io/badge/Visit-My%20Portfolio-blue?style=for-the-badge&logo=github)](https://sarfaraz004.github.io/sarfaraz_portfolio/)
 
 ---
 
