@@ -28,5 +28,5 @@ I specialize in **HTML, CSS, and JavaScript** to create **robust and user-friend
 
 ## 📫 Get in Touch
 
-- LinkedIn: [Sarfaraz Sattar](https://www.linkedin.com/in/your-linkedin/)  
-- Email: sarfaraz@example.com  
+- LinkedIn: [Sarfaraz Sattar](https://www.linkedin.com/in/sarfaraz-sattar-8253b72a1/)  
+- Email: sarfarazsattar09@gmail.com 
