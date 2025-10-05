@@ -1,2 +1,32 @@
-# Portfolio
- Welcome to my Portfolio! I'm Sarfaraz Sattar, a passionate developer with experience in building dynamic web applications. This portfolio showcases a variety of projects I've worked on, ranging from e-learning platforms to AI ChatBot, Student management systems, E-commerce Website. I specialize in using technologies like   HTML, CSS, and JavaScript to create robust and user-friendly web applications.
+# 👋 Hi, I'm Sarfaraz Sattar
+
+Welcome to my **Portfolio**! I'm a passionate developer with experience in building **dynamic web applications**.  
+This portfolio showcases a variety of projects I've worked on, including:
+
+- E-learning platforms  
+- AI ChatBot  
+- Student management systems  
+- E-commerce websites  
+
+I specialize in **HTML, CSS, and JavaScript** to create **robust and user-friendly web applications**.  
+
+---
+
+## 🔗 Check Out My Portfolio
+
+[![Visit Portfolio](https://img.shields.io/badge/Visit-My%20Portfolio-blue?style=for-the-badge&logo=github)](https://sarfaraz004.github.io/My_Portfolio/)
+
+---
+
+## 🛠 Technologies & Skills
+
+- **Front-End:** HTML, CSS, JavaScript  
+- **Projects:** AI ChatBot, E-learning Platforms, Student Management Systems, E-commerce Website  
+- **Tools & Libraries:** GitHub, VS Code, Chrome DevTools  
+
+---
+
+## 📫 Get in Touch
+
+- LinkedIn: [Sarfaraz Sattar](https://www.linkedin.com/in/your-linkedin/)  
+- Email: sarfaraz@example.com  

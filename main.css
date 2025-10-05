@@ -15,12 +15,14 @@
     --main-color: #3a1aa1;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0,0,0,.2);
+    --fill-color: #0b061f;
 }
 
 .dark-mode{
     --bg-color: #0b061f;
     --text-color: #fdfdfd;
     --shadow-color: rgba(0,0,0,.7);
+    --fill-color: #fdfdfd;
 }
 
 html{
@@ -150,7 +152,7 @@ section{
     font-size: 2rem;
     color: var(--main-color);
     margin: 2.5rem 1.5rem 3rem 0;
-    transition: 0.5 ease;
+    transition: 0.6s ease;
 }
 
 .home-content .social-media a:hover{
@@ -585,6 +587,33 @@ span{
     margin-top: 2rem;
     cursor: pointer;
 }
+
+/* skill bar */
+.skill {
+  margin-bottom: 0px;
+}
+
+.skill-bar {
+  background-color: var(--fill-color);
+  border-radius: 25px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  background-color: var(--main-color); /* Change color to your theme */
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  animation: fillBar 3s forwards;
+}
+
+/* Animation */
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: 85%; }
+}
+
 
 /* Responsive Styles */
 @media (max-width:1200px){
