@@ -149,4 +149,87 @@ function animateProgress(slide) {
     });
 }
 
+// Experience Section Dynamic Content
+const experiences = [
+            {
+                title: "Data Science Intern",
+                company: "CoachEd",
+                duration: "Oct 2022 - Nov 2022",
+                type: "internship",
+                description: "Worked on data analysis and visualization using Python. Gained practical experience in handling datasets and building basic machine learning models."
+            },
+            {
+                title: "Full Stack Intern",
+                company: "Pranaksh Technologies",
+                duration: "Nov 2023 - January 2024",
+                type: "internship",
+                description: "Developed and tested web applications using Node.js and MongoDB. Improved backend performance and contributed to team projects."
+            },
+            {
+                title: "Full Stack Intern",
+                company: "Kodnest Technologies",
+                duration: "Feb 2025 - April 2025",
+                type: "internship",
+                description: "Built responsive web pages using React and Tailwind CSS. Worked on connecting frontend with backend APIs for smooth functionality."
+            },
+            {
+                title: "Devops Intern",
+                company: "Onefin",
+                duration: "April 2025 - Oct 2025",
+                type: "internship",
+                description: "Learned CI/CD processes, cloud deployment, and containerization tools. Assisted in automating build and deployment tasks."
+            },
+            {
+                title: "Secops Engineer",
+                company: "Onefin",
+                duration: "Oct 2025 - Present",
+                type: "job",
+                description: "Currently working on system security and automation. Involved in managing cloud infrastructure and improving security practices."
+            }
+        ];
+
+        // Function to render all experiences
+        function renderExperiences() {
+            const tree = document.getElementById('experienceTree');
+            tree.innerHTML = '';
+            
+            experiences.forEach((exp, index) => {
+                const item = createExperienceItem(exp, index);
+                tree.appendChild(item);
+            });
+        }
+
+        function createExperienceItem(exp, index) {
+            const item = document.createElement('div');
+            const side = index % 2 === 0 ? 'left' : 'right';
+            item.className = `experience-item ${side}`;
+            item.style.animationDelay = `${index * 0.1}s`;
+            
+            item.innerHTML = `
+                <div class="experience-card" onclick="toggleDescription(this)">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">${exp.title}</div>
+                            <div class="company">${exp.company}</div>
+                            <span class="type-badge ${exp.type}">${exp.type === 'job' ? 'Full-time' : 'Internship'}</span>
+                        </div>
+                        <div class="duration">${exp.duration}</div>
+                    </div>
+                    <div class="description">${exp.description}</div>
+                      <div class="click-indicator">
+                          <span>Click to see more</span>
+                        <span>▼</span>
+                    </div>
+                </div>
+            `;
+            
+            return item;
+        }
+
+        // Toggle description visibility
+        function toggleDescription(card) {
+            card.classList.toggle('expanded');
+        }
+
+        renderExperiences();
 
