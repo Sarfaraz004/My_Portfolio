@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -17,6 +19,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#skill">Skills</a>
             <a href="#internship">Projects</a>
             <a href="#contact">Contact</a>
@@ -31,7 +34,7 @@
         <div class="home-content">
             <h3>Hello, I am</h3><br>
             <h1 id="demo"></h1>
-            <p>Computer Science & Engineering</p>
+            <p>Computer Science Engineer</p>
             <div class="social-media">
                 <a href="https://github.com/Sarfaraz004"><i class='bx bxl-github'></i></a>
                 <a href="https://www.linkedin.com/in/sarfaraz-sattar-8253b72a1/"><i class='bx bxl-linkedin'></i></a>
@@ -45,15 +48,15 @@
             <div class="profession-box">
                 <div class="profession" style="--i:0;">
                     <i class='bx bx-code-alt'></i>
-                    <h3>Web Devloper</h3>
+                    <h3>Developer</h3>
                 </div>
                 <div class="profession" style="--i:1;">
                     <i class='bx bxs-data'></i>
-                    <h3>Data Scientist</h3>
+                    <h3>Problem Solver</h3>
                 </div>
                 <div class="profession" style="--i:2;">
                     <i class='bx bx-palette'></i>
-                    <h3>Web Designer</h3>
+                    <h3>Code Ninja</h3>
                 </div>
                 <div class="profession" style="--i:3;">
                     <i class='bx bx-message-square-dots'></i>
@@ -77,50 +80,153 @@
         <div class="about-content">
             <h2 class="heading" style="text-align: center;">About <span>Me</span></h2><br>
             <h3>Hi, I am <b>Sarfaraz Sattar</b></h3>
-            <p>Pursuing Computer Science Engineering degree in Jain College of Engineering and Research, Belagavi And I
-                am willing to Learn Web development, Create Applications and also intersted in AI and ML field.
-                <br>Along with my degree, I have completed Python for Datascience course on NPTEL, and also some other
-                courses in coursera, Great Learning and Etc.</p>
-            <a href="#" class="btn">Show More</a>
-            <a href="#" class="btn1">Github</a>
+            <p style="text-align: justify;">A <b style="color: #3a1aa1">Computer Science graduate</b> with a strong
+                foundation in Web Development, Cloud Computing, and
+                AI/ML. I have completed internships where I gained practical experience in different domains,
+                applying my knowledge to real-world projects.<br><br>
+
+                I am proficient in multiple programming languages and frameworks, and <b style="color: #3a1aa1">I enjoy
+                    exploring new
+                    technologies, building projects, and solving challenging problems.</b> I am always eager to learn
+                and grow,
+                aiming to contribute to innovative and impactful solutions in the tech industry.
+            </p>
+            <a href="#experience" class="btn">Show More</a>
+            <a href="https://github.com/Sarfaraz004" class="btn1">Github</a>
         </div>
     </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <h2 class="heading">My <span>Experience</span></h2>
+    </section>
+
+    <!-- Skills Section -->
+
     <section class="skill" id="skill">
         <h2 class="heading">My <span>Skills</span></h2>
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bxl-python' ></i>
+        <div class="swiper skillsSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide services-box">
+                    <i class='bx bxl-python'></i>
                     <h3>Python</h3>
-                <p>Python is a high-level, interpreted programming language known for its readibility. its clean syntax, emphasing indentation, makes it easy to learn and write, enhancing code readibility. It supports multiple programming paradigms.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <p>Proficient in building web apps, automation scripts, and data analysis using Python.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="85"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>85%</span>
+                        </div>
+                    </div>
                 </div>
-            <div class="services-box">
-                <i class='bx bxl-java' ></i>
+                <div class="swiper-slide services-box">
+                    <i class='bx bxl-java'></i>
                     <h3>Java</h3>
-                <p>Java is a versatile, object-oriented programming language reowned for its platform independence. Programs written in java can run on any device with a Java Virtual Machine </p>
-                    <a href="#" class="btn">Read More</a>
+                    <p>Skilled in object-oriented programming and developing scalable enterprise applications in Java.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="70"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>70%</span>
+                        </div>
+                    </div>
                 </div>
-            <div class="services-box">
-                <i class='bx bxl-c-plus-plus' ></i>
-                    <h3>C++</h3>
-                <p>C++ is a powerful, multi-paradigm programming language that extends the capabilities of C language. It support both procedural and object-oriented programming.</p>
-                    <a href="#" class="btn">Read More</a>
+                <div class="swiper-slide services-box">
+                    <i class='bxl  bx-django' ></i> 
+                    <h3>Django</h3>
+                    <p>Experienced in building web applications using the Django framework.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="90"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>90%</span>
+                        </div>
+                    </div>
                 </div>
-        </div>
-        <br><br><br>
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bxl-react' ></i>
-                <h3>React</h3>
-                <p>React is a JavaScript library developed by Facebook for building user interface, particularly for single-page applications. it follows a component-based architecture.</p>
-                <a href="#" class="btn">Read More</a>
+                <div class="swiper-slide services-box">
+                    <i class='bx bxl-javascript'></i>
+                    <h3>JavaScript</h3>
+                    <p>Skilled in creating responsive and interactive web interfaces with JavaScript.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="80"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services-box">
+                    <i class='bx bxl-html5'></i>
+                    <h3>HTML/CSS</h3>
+                    <p>Proficient in building responsive, accessible, and visually appealing web pages.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="90"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services-box">
+                    <i class='bxl  bx-mongodb'></i>
+                    <h3>MongoDB</h3>
+                    <p>Proficient in designing and managing scalable NoSQL databases using MongoDB.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="85"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services-box">
+                    <i class='bx  bx-database'></i>
+                    <h3>SQL</h3>
+                    <p>Skilled in data management, normalization, and optimization of database queries.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="80"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services-box">
+                    <i class='bx bxl-react'></i>
+                    <h3>React</h3>
+                    <p>Skilled in building modern, responsive single-page applications using React.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="70"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>70%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide services-box">
+                    <i class='bx bxl-tailwind-css'></i>
+                    <h3>Tail-wind CSS</h3>
+                    <p>Proficient in building responsive and modern UIs quickly using Tailwind CSS.</p>
+                    <div class="progress-bar">
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percentage="85"></div>
+                        </div>
+                        <div class="skill-percentage">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="services-box">
-                <i class='bx bxl-tailwind-css' ></i>
-                <h3>Tail-wind CSS</h3>
-                <p>Tail-wind CSS is a utility-first CSS framework that streamlines web development by providing a set of pre-defined utility classes.it encorages a functional & modular approch to styling.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+            <br><br><br>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -250,4 +356,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
